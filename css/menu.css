@@ -1,3 +1,7 @@
+.menu {
+    padding-bottom: 50px;
+}
+
 .menu__title {
     font-size: 32px;
     font-weight: 700;
@@ -5,10 +9,13 @@
 }
 
 .menu__cols {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* две колонки одинаковой ширины */
     gap: 15px;
+}
+
+.menu__col {
+    width: 100%; /* чтобы занимал всю ширину своей ячейки */
 }
 
 .menu__col {
@@ -18,7 +25,8 @@
     border-radius: 15px;
     background-color: #fff;
     padding: 10px;
-    max-width: 180px;
+    /* max-width: 180px; */
+    width: 100%;
 }
 
 .menu__col-img {
@@ -35,13 +43,13 @@
 }
 
 .menu__col-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 3px;
 }
 
 .menu__col-descr {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -50,17 +58,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .menu__col-price {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .menu__col-btn {
     padding: 10px 18px;
     border-radius: 100px;
-    font-size: 14px;
+    font-size: 0.88rem;
     color: #fff;
     background-color: #120d4f;
+}
+
+@media (max-width: 410px) {
+    .menu__cols {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__col img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .menu__col-title {
+        font-size: 1.5rem;
+    }
+
+    .menu__col-descr {
+        font-size: 1rem;
+    }
+
+    .menu__col-price {
+        font-size: 1.5rem;
+    }
+
+    .menu__col-btn {
+        font-size: 1.4rem;
+    }
 }

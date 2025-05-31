@@ -1,0 +1,9 @@
+.footer {
+    font-size: 1rem;
+    padding-bottom: 25px;
+}
+
+.footer span {
+    display: block;
+    margin-top: 10px;
+}
