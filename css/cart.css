@@ -1,0 +1,37 @@
+.header__cart {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+}
+
+.body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.cart__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart__remove {
+    background: none;
+}

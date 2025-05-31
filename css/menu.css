@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* две колонки одинаковой ширины */
     gap: 15px;
+    margin-bottom: 40px;
 }
 
 .menu__col {
@@ -20,12 +21,11 @@
 
 .menu__col {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 15px;
     background-color: #fff;
     padding: 10px;
-    /* max-width: 180px; */
     width: 100%;
 }
 
@@ -72,6 +72,25 @@
     font-size: 0.88rem;
     color: #fff;
     background-color: #120d4f;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background-color: #120d4f;
+    color: #fff;
 }
 
 @media (max-width: 410px) {
