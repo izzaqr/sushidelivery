@@ -1,28 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // HEADER LOAD
-    fetch("/html/header.html")
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById("header-container").innerHTML = html;
+    // BURGER MENU
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("header__nav");
+    if (burger && nav) {
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    }
 
-            if (window.location.pathname.includes("cart.html")) {
-                const cartIcon = document.getElementById("header-cart");
-                if (cartIcon) {
-                    cartIcon.style.visibility = "hidden";
-                    cartIcon.style.pointerEvents = "none";
-                }
-            }
+    // HEADER SCROLL
+    let lastScroll = 0;
+    const header = document.querySelector(".header");
 
-            // BURGER MENU
-            const burger = document.getElementById("burger");
-            const nav = document.getElementById("header__nav");
-            if (burger && nav) {
-                burger.addEventListener("click", () => {
-                    nav.classList.toggle("active");
-                });
-            }
-        })
-        .catch((err) => console.error("Ошибка загрузки header:", err));
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 60) {
+            // Если прокручено меньше или ровно 50px — показываем шапку
+            header.style.transform = "translateY(0)";
+            return;
+        }
+
+        if (currentScroll > lastScroll) {
+            // Скролл вниз после 50px — скрываем шапку
+            header.style.transform = "translateY(-100%)";
+        } else {
+            // Скролл вверх — показываем шапку
+            header.style.transform = "translateY(0)";
+        }
+
+        lastScroll = currentScroll;
+    });
 
     // PAGINATION
     const items = document.querySelectorAll(".menu__col");
