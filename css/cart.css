@@ -1,3 +1,7 @@
+.cart {
+    padding-top: 114px;
+}
+
 .header__cart {
     font-size: 20px;
     text-decoration: none;
@@ -38,10 +42,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .cart__remove {
+    font-size: 16px;
     background: none;
+}
+
+.cart__total {
+    padding-top: 30px;
+    font-size: 25px;
 }
 
 .header__cart-delete {
