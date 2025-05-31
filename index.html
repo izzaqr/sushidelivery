@@ -8,7 +8,44 @@
     </head>
 
     <body>
-        <div id="header-container"></div>
+        <header class="header" id="header">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="header__nav" id="header__nav">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+
+            <a href="/" class="header__title"><h3>norifood</h3></a>
+
+            <a href="html/cart.html" class="header__cart" id="header-cart">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+                >
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path
+                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                </svg>
+                <!-- <span id="cart-count">0</span> -->
+            </a>
+        </header>
 
         <main class="main">
             <section class="hero">
