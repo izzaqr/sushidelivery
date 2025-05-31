@@ -4,27 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="fonts/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
-        <header class="header">
-            <div class="burger" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav class="header__nav" id="header__nav">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Корзина</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="header-container"></div>
 
         <main class="main">
             <section class="hero">
@@ -114,110 +98,165 @@
                 <div class="container menu__container">
                     <h4 class="menu__title">Меню</h4>
 
-                    <div class="menu__cols">
+                    <div class="menu__cols" id="menu__cols">
                         <div class="menu__col">
                             <img
-                                src="images/menu/image 1.png"
+                                src="images/menu/image1.png"
                                 alt="sushi image"
                             />
-                            <h5 class="menu__col-title">Филадельфия</h5>
-                            <p class="menu__col-descr">Рис + лосось</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__col">
-                            <div class="menu__col-img">
-                                <img
-                                    src="images/menu/image 2.png"
-                                    alt="sushi image"
-                                />
-                            </div>
-                            <h5 class="menu__col-title">Футомаки</h5>
-                            <p class="menu__col-descr">Рис + креветка</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Филадельфия</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__col">
                             <img
-                                src="images/menu/image 1.png"
+                                src="images/menu/image2.png"
                                 alt="sushi image"
                             />
-                            <h5 class="menu__col-title">Филадельфия</h5>
-                            <p class="menu__col-descr">Рис + лосось</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__col">
-                            <div class="menu__col-img">
-                                <img
-                                    src="images/menu/image 2.png"
-                                    alt="sushi image"
-                                />
-                            </div>
-                            <h5 class="menu__col-title">Футомаки</h5>
-                            <p class="menu__col-descr">Рис + креветка</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Калифорния</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__col">
                             <img
-                                src="images/menu/image 1.png"
+                                src="images/menu/image3.png"
                                 alt="sushi image"
                             />
-                            <h5 class="menu__col-title">Филадельфия</h5>
-                            <p class="menu__col-descr">Рис + лосось</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Цезарь</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__col">
-                            <div class="menu__col-img">
-                                <img
-                                    src="images/menu/image 2.png"
-                                    alt="sushi image"
-                                />
+                            <img
+                                src="images/menu/image1.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Филадельфия</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
+                                </div>
                             </div>
-                            <h5 class="menu__col-title">Футомаки</h5>
-                            <p class="menu__col-descr">Рис + креветка</p>
-                            <div class="menu__col-order">
-                                <p class="menu__col-price">600₽</p>
-                                <div class="menu__col-btn">
-                                    <a href="#">Взять</a>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image2.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Калифорния</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image3.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Цезарь</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image1.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Филадельфия</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image2.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Калифорния</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image3.png"
+                                alt="sushi image"
+                            />
+                            <div class="menu__col-cont">
+                                <h5 class="menu__col-title">Цезарь</h5>
+                                <p class="menu__col-descr">Рис + лосось</p>
+                                <div class="menu__col-order">
+                                    <p class="menu__col-price">600₽</p>
+                                    <div class="menu__col-btn">
+                                        <a href="#">Взять</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="pagination" id="pagination"></div>
                 </div>
             </section>
 
             <footer class="footer">
                 <div class="container footer__container">
-                    ул. 345 Дагестанской Стрелковой ДивизииДербент, Респ.
-                    Дагестан, Россия
+                    ул. Таги-Заде, 83, Дербент, Респ. Дагестан
                     <span>+7 (999) 999-99-99</span>
                 </div>
             </footer>
         </main>
 
-        <script src="js/main.js"></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
