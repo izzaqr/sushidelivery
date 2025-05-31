@@ -1,0 +1,14 @@
+@import url("header.css");
+@import url("hero.css");
+@import url("menu.css");
+
+body {
+    margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    background-color: #ebeafa;
+}
+
+.container {
+    padding: 0 25px;
+}

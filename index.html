@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="fonts/fonts.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="header__nav" id="header__nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="container hero__container">
+                    <h2 class="hero__intro">
+                        <img
+                            class="hero__intro-img"
+                            src="images/sushi.png"
+                            alt="sushi icon"
+                        />
+                        Свежо. Быстро. Вкусно
+                    </h2>
+
+                    <div class="hero__search">
+                        <label for="search" class="hero__search-text">
+                            Ищете что-то конкретное?</label
+                        >
+                        <div class="hero__search-input">
+                            <input
+                                id="search"
+                                type="text"
+                                placeholder="Поиск"
+                            />
+
+                            <svg
+                                class="hero__search-loupe"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-search-icon lucide-search"
+                            >
+                                <path d="m21 21-4.34-4.34" />
+                                <circle cx="11" cy="11" r="8" />
+                            </svg>
+
+                            <button
+                                form="search"
+                                class="hero__search-button"
+                                type="submit"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"
+                                >
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 12h8" />
+                                    <path d="m12 16 4-4-4-4" />
+                                </svg>
+                                <!-- <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-send-horizontal-icon lucide-send-horizontal"
+                                >
+                                    <path
+                                        d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"
+                                    />
+                                    <path d="M6 12h16" />
+                                </svg> -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu">
+                <div class="container menu__container">
+                    <h4 class="menu__title">Меню</h4>
+
+                    <div class="menu__cols">
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image 1.png"
+                                alt="sushi image"
+                            />
+                            <h5 class="menu__col-title">Филадельфия</h5>
+                            <p class="menu__col-descr">Рис + лосось</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <div class="menu__col-img">
+                                <img
+                                    src="images/menu/image 2.png"
+                                    alt="sushi image"
+                                />
+                            </div>
+                            <h5 class="menu__col-title">Футомаки</h5>
+                            <p class="menu__col-descr">Рис + креветка</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image 1.png"
+                                alt="sushi image"
+                            />
+                            <h5 class="menu__col-title">Филадельфия</h5>
+                            <p class="menu__col-descr">Рис + лосось</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <div class="menu__col-img">
+                                <img
+                                    src="images/menu/image 2.png"
+                                    alt="sushi image"
+                                />
+                            </div>
+                            <h5 class="menu__col-title">Футомаки</h5>
+                            <p class="menu__col-descr">Рис + креветка</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <img
+                                src="images/menu/image 1.png"
+                                alt="sushi image"
+                            />
+                            <h5 class="menu__col-title">Филадельфия</h5>
+                            <p class="menu__col-descr">Рис + лосось</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__col">
+                            <div class="menu__col-img">
+                                <img
+                                    src="images/menu/image 2.png"
+                                    alt="sushi image"
+                                />
+                            </div>
+                            <h5 class="menu__col-title">Футомаки</h5>
+                            <p class="menu__col-descr">Рис + креветка</p>
+                            <div class="menu__col-order">
+                                <p class="menu__col-price">600₽</p>
+                                <div class="menu__col-btn">
+                                    <a href="#">Взять</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
