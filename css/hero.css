@@ -1,3 +1,7 @@
+.hero {
+    padding-top: 114px;
+}
+
 .hero__intro {
     display: flex;
     gap: 8px;

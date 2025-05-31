@@ -74,6 +74,10 @@
     background-color: #120d4f;
 }
 
+.menu__col-btn:hover {
+    background-color: #1c1672;
+}
+
 .pagination {
     margin-top: 20px;
     text-align: center;

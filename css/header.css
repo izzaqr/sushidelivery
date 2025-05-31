@@ -1,11 +1,19 @@
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 30px;
+    z-index: 100;
+    background: #ffffff9d;
+    transition: transform 0.3s ease;
 }
 
 .header__title {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 30px;
     font-weight: 700;
     z-index: 100;
